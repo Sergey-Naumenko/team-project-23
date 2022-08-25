@@ -9,10 +9,12 @@ p {
     margin: 0;
 }
 
-img {
-display: block;
-width: auto;
-height: auto;
+img {  
+    display: block;  
+    max-width: 100%;  
+    height: auto;
+    object-fit: cover;  
+    object-position: center;
 }
 
 .link {
