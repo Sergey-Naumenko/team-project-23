@@ -1,2 +1,18 @@
+// base styles
+@import './base/base';
+@import './base/reset';
+
+// layout styles
 @import './common';
-@import './example';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/favorites';
+@import './layout/customers';
+@import './layout/subsctibe';
+@import './layout/footer';
+
+// units styles
+@import './units/hidden';
+@import './units/variables';
+
