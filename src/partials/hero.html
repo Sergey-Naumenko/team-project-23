@@ -11,19 +11,48 @@
             </button>
         </div>
         <div class="slider">
+            <input class="slider-open" type="radio" id="slider-1" name="slider" aria-hidden="true" checked="checked">
             <div class="slider-herro">
-                <input class="slider-open" type="radio" id="slider-1" name="slider" aria-hidden="true"
-                    checked="checked">
-                <div class="slider-item">
-                    <img src="./image/herro/photo_1.png" alt="noun dish" aria-label="noun dish">
-                </div>
+                <picture class="slider-herro">
+                    <source srcset="src/images/hero/bg_1@1.webp, src/images/hero/bg_1@2x.webp"
+                        media="(min-width: 1200px)" type="image/webp">
+                    <source srcset="src/images/hero/bg_1@1.png,src/images/hero/bg_1@2x.png" media="(min-width: 1200px)"
+                        type="image/webp">
+                    <source srcset="src/images/hero/tb_1@1.webp, src/images/hero/tb_1@2x.webp"
+                        media="(min-width: 768px)" type="image/webp">
+                    <source srcset="src/images/hero/tb_1@1.png,src/images/hero/tb_1@2x.png" media="(min-width: 768px)"
+                        type="image/webp">
+                    <img src="src/images/hero/bg_3@1.webp" alt="noun dish" aria-label="noun dish">
+                </picture>
+            </div>
+            <div class="slider-item">
                 <input class="slider-open" type="radio" id="slider-2" name="slider" aria-hidden="true">
                 <div class="slider-item">
-                    <img src="./image/herro/photo2.png" alt="noun dish" aria-label="noun dish">
+                    <picture class="slider-herro">
+                        <source srcset="src/images/hero/bg_2@1.webp, src/images/hero/bg_2@2x.webp"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="src/images/hero/bg_2@1.png,src/images/hero/bg_2@2x.png"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="src/images/hero/tb_2@1.webp, src/images/hero/tb_2@2x.webp"
+                            media="(min-width: 768px)" type="image/webp">
+                        <source srcset="src/images/hero/tb_2@1.png,src/images/hero/tb_2@2x.png"
+                            media="(min-width: 768px)" type="image/webp">
+                        <img src="src/images/hero/bg_2@1.webp" alt="noun dish" aria-label="noun dish">
+                    </picture>
                 </div>
                 <input class="slider-open" type="radio" id="slider-3" name="slider" aria-hidden="true">
                 <div class="slider-item">
-                    <img src="./image/herro/photo_3.png" alt="noun dish" aria-label="noun dish">
+                    <picture class="slider-herro">
+                        <source srcset="src/images/hero/bg_3@1.webp, src/images/hero/bg_3@2x.webp"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="src/images/hero/bg_3@1.png,src/images/hero/bg_3@2x.png"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="src/images/hero/tb_3@1.webp, src/images/hero/tb_3@2x.webp"
+                            media="(min-width: 768px)" type="image/webp">
+                        <source srcset="src/images/hero/tb_3@1.png,src/images/hero/tb_3@2x.png"
+                            media="(min-width: 768px)" type="image/webp">
+                        <img src="src/images/hero/bg_3@1.webp" alt="noun dish" aria-label="noun dish">
+                    </picture>
                 </div>
                 <label for="slider-3" class="slider-btn icon-left btn-1"></label>
                 <label for="slider-2" class="slider-btn icon-right btn-1"></label>
@@ -35,12 +64,12 @@
         </div>
         <div class="slider-open__left">
             <svg class="icon" width="40" height="48">
-                <use class="icon-left" href="./icons.svg#icon-left"></use>
+                <use class="icon-left" href="../images/hero/symbol-defs.svg#icon-left_bg"></use>
             </svg>
         </div>
         <div class="slider-open__right">
             <svg class="icon" width="40" height="48">
-                <use class="icon-right" href="./icons.svg#icon-right"></use>
+                <use class="icon-right" href="../images/hero/symbol-defs.svg#icon-right_bg"></use>
             </svg>
         </div>
     </div>
