@@ -1,0 +1,25 @@
+// section footer styles
+.footer {
+  padding: 60px 0;
+
+  background-color: #fefefe;
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 28px;
+  }
+}
