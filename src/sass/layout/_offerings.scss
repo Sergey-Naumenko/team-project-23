@@ -10,6 +10,12 @@
   }
 }
 
+.offerings-container {
+    @media screen and (min-width: 1280px) {
+display: flex;
+}
+}
+
 .offerings-img {
   margin-bottom: 60px;
 
@@ -101,6 +107,8 @@
 }
 
 .offerings-btn {
+    display: inline-flex;
+    align-items: center;
   margin-right: 20.5px;
   max-width: 130px;
   min-width: 106px;
@@ -126,6 +134,7 @@ color: var(--black-cl);
 
   @media screen and (min-width: 1280px) {
     margin-right: 0;
+    padding: 10px 19px 10px 20px;
     color: var(--main-txt-cl);
   }
 }
