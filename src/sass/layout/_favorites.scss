@@ -1,6 +1,7 @@
-// correct
+// section favorites styles
 .favorites {
   padding: 60px 0;
+
   background-color: #fefefe;
 
   @media screen and (min-width: 768px) {
@@ -8,7 +9,7 @@
   }
 }
 
-// correct
+// favorites title styles
 .favorites-title {
   margin-bottom: 20px;
 
@@ -24,7 +25,7 @@
   }
 }
 
-// correct
+// // favorites title-description styles
 .favorites-description {
   margin-bottom: 60px;
 
@@ -44,7 +45,7 @@
   }
 }
 
-// correct
+// List of favorites styles
 .meals {
   display: flex;
   flex-direction: column;
@@ -58,36 +59,20 @@
   }
 }
 
-// check
+// item of favorites styles
 .meals-item {
-  //   padding: 28px;
   width: 280px;
-  overflow: hidden;
-
-  border: 11px solid #ffe550;
-  border-radius: 139.658px; //ВОПРОС
-  border-radius: 50%;
 
   @media screen and (min-width: 768px) {
-    // padding: 34px;
-
     flex-basis: calc((100% - 32px) / 2);
-
-    border: 14px solid #ffe550;
-    border-radius: 167.59px; //ВОПРОС
-    border-radius: 50%;
   }
-  @media screen and (min-width: 1280px) {
-    // padding: 40px;
-    flex-basis: calc((100% - 64px) / 3);
 
-    border: 16px solid #ffe550;
-    border-radius: 197.5px; //ВОПРОС
-    border-radius: 50%;
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 64px) / 3);
   }
 }
 
-// correct
+// absence of items in mobile version
 .meals-item:nth-child(n + 4) {
   display: none;
 
@@ -96,7 +81,7 @@
   }
 }
 
-//check
+// decoration styles fo item(link to)
 .meals-link {
   display: block;
   height: 100%;
@@ -104,20 +89,30 @@
 
   padding: 28px;
 
+  border-width: 11px;
+  border-style: solid;
+  border-color: var(--default-yellow-cl);
+  border-radius: 139.658px;
+
+  transition: border-color var(--timing-function);
+
   @media screen and (min-width: 768px) {
     padding: 34px;
+
+    border-width: 14px;
+    border-radius: 167.59px;
   }
   @media screen and (min-width: 1280px) {
     padding: 40px;
-  }
 
-  //background-color: aquamarine;
-  // outline: 1px solid black;
+    border-width: 16px;
+    border-radius: 197.5px;
+  }
 }
 
-//check
-.favorites-picture {
-  //   display: block;
-  //   margin: 0 auto;
-  //outline: 1px solid red;
+// hover, focus, active
+.meals-link:hover,
+.meals-link:focus,
+.meals-link:active {
+  border-color: var(--green-cl);
 }
