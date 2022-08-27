@@ -50,7 +50,7 @@
 
         @media screen and (min-width:768px) {
             text-align: start;
-            min-width: 537px;
+            min-width: 480px;
 
 
             margin-bottom: 44px;
@@ -69,7 +69,7 @@
 
     .herro__text {
         display: inline-block;
-        max-width: 266px;
+        min-width: 266px;
         margin-bottom: 34px;
         font-style: normal;
         font-weight: 400;
@@ -81,7 +81,7 @@
 
         @media screen and (min-width:768px) {
 
-            max-width: 336px;
+            min-width: 336px;
             max-height: 120px;
             margin-bottom: 40px;
             font-size: 16px;
