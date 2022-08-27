@@ -1,7 +1,7 @@
 .offerings {
     max-width: 1280px;
-    height: 856px;
-    padding: 44px 0 60px 0;
+    height: 1050px;
+    padding: 41px 0 60px 0;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,8 +26,8 @@
     }
 
     @media screen and (min-width: 1280px) {
-        height: 856px;
-        padding: 177px 0 75px 0;
+        height: 824px;
+        padding: 177px 0 43px 0;
 
         background-image: url(../images/offerings/bg-offerings@1x-dk.png);
 
@@ -48,15 +48,10 @@
     }
 }
 
-.offerings-picture {
-    width: 100%;
-    height: auto;
-   }
-
 .offerings-img {
     margin-bottom: 60px;
-    align-items: center;
-
+    width: 100%;
+   
     @media screen and (min-width: 768px) {}
 
     @media screen and (min-width: 1280px) {
