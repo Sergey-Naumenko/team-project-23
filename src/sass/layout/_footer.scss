@@ -1,4 +1,5 @@
 // section footer styles
+// CORRECT   !!!!!!!!!!!!!! ADD BACKGROUND IMAGES
 .footer {
   padding: 60px 0;
 
@@ -10,7 +11,24 @@
   }
 }
 
+// top part of footer styles
+//???????????
+.footer-top {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+}
+
 // footer navigation section styles
+// QUESTION ABOUT ALIGN ITEMS IN MB VERSION
 .footer-nav {
   display: flex;
 
@@ -22,6 +40,7 @@
 }
 
 //footer logo styles
+//CORRECT
 .footer-logo {
   margin-right: 81px;
 
@@ -51,22 +70,17 @@
   font-size: 14px;
   line-height: calc(16 / 14);
   color: var(--black-cl);
+
+  @media screen and (min-width: 1280px) {
+    color: var(--main-txt-cl);
+  }
 }
 
 .footer-form {
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 100px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 80px;
-  }
+  margin-left: auto;
 }
 
 .footer-input-field {
-  margin-bottom: 20px;
 }
 
 .subscribe-label {
@@ -103,7 +117,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
+  // margin-left: auto;
   margin-bottom: 20px;
   padding: 11px 22px;
 
@@ -134,7 +148,8 @@
   }
 }
 
-.footer-wrap {
+// footer bottom styles
+.footer-bottom {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
