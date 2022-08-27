@@ -199,20 +199,20 @@
     // }
 
 
-    .slider-open:checked+.slider-item {
-        position: static;
-        opacity: 1;
+    // .slider-open:checked+.slider-item {
+    //     position: static;
+    //     opacity: 1;
 
-        @media screen and (max-width:767px) {
-            display: none;
-        }
-    }
+    //     @media screen and (max-width:767px) {
+    //         display: none;
+    //     }
+    // }
 
-    .slider-item {
-        position: absolute;
-        opacity: 0;
-        transition: opacity 0.6s ease-out;
-    }
+    // .slider-item {
+    //     position: absolute;
+    //     opacity: 0;
+    //     transition: opacity 0.6s ease-out;
+    // }
 
     .slider-item img {
         display: block;
