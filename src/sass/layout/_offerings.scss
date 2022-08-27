@@ -3,24 +3,24 @@
   height: 856px;
   padding: 44px 0 60px 0;
 
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-image: url(../images/offerings/bg-offerings@1x-mb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/offerings/bg-offerings@1x-mb.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        background-image: url(../images/offerings/bg-offerings@2x-mb.png);
-      }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/bg-offerings@2x-mb.png);
+  }
 
   @media screen and (min-width: 768px) {
     height: 1140px;
     padding: 150px 0 100px 0;
     background-image: url(../images/offerings/bg-offerings@1x-tb.png);
-  
+
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/offerings/bg-offerings@2x-tb.png);
     }
   }
@@ -30,12 +30,12 @@
     padding: 177px 0 75px 0;
 
     background-image: url(../images/offerings/bg-offerings@1x-dk.png);
-    
-      @media (min-device-pixel-ratio: 2),
+
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url(../images/offerings/bg-offerings@2x-dk.png);
-      }
+      background-image: url(../images/offerings/bg-offerings@2x-dk.png);
+    }
   }
 }
 
@@ -53,28 +53,26 @@
   height: auto;
 
   display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .offerings-img {
-  width: 100%;
   margin-bottom: 60px;
   align-items: center;
 
-    @media screen and (min-width: 768px) {
-    }
+  @media screen and (min-width: 768px) {
+  }
 
   @media screen and (min-width: 1280px) {
-   
     margin-bottom: 0;
   }
 }
 
 .offerings-right-side {
   @media screen and (min-width: 1280px) {
-  max-width: 573px;
-}
+    max-width: 573px;
+  }
 }
 
 .offerings-title {
@@ -85,6 +83,7 @@ justify-content: center;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
+    max-width: 526px;
 
     font-size: 42px;
     line-height: calc(49 / 42);
@@ -104,6 +103,7 @@ justify-content: center;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
+    max-width: 526px;
 
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -164,9 +164,7 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   margin-right: 20.5px;
-  min-width: 130px;
-  min-height: 40px;
-  padding: 10px 31px 9px 32px;
+  padding: 10px 29px 9px 30px;
 
   font-size: 14px;
   line-height: calc(21 / 14);
@@ -187,7 +185,7 @@ justify-content: center;
 
   @media screen and (min-width: 1280px) {
     margin-right: 0;
-    padding: 10px 19px 10px 20px;
+    padding: 10px 17px 10px 19px;
     color: var(--main-txt-cl);
   }
 }
