@@ -1,0 +1,196 @@
+.offerings {
+    max-width: 1280px;
+    height: 856px;
+    padding: 44px 0 60px 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/offerings/bg-offerings@1x-mb.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/offerings/bg-offerings@2x-mb.png);
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 1140px;
+        padding: 150px 0 100px 0;
+        background-image: url(../images/offerings/bg-offerings@1x-tb.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/offerings/bg-offerings@2x-tb.png);
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        height: 856px;
+        padding: 177px 0 75px 0;
+
+        background-image: url(../images/offerings/bg-offerings@1x-dk.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/offerings/bg-offerings@2x-dk.png);
+        }
+    }
+}
+
+.offerings-container {
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 90px;
+    }
+}
+
+.offerings-picture {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offerings-img {
+    margin-bottom: 60px;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
+    }
+}
+
+.offerings-right-side {
+    @media screen and (min-width: 1280px) {
+        max-width: 573px;
+    }
+}
+
+.offerings-title {
+    margin-bottom: 28px;
+
+    font-size: 28px;
+    line-height: calc(33 / 28);
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+        max-width: 526px;
+
+        font-size: 42px;
+        line-height: calc(49 / 42);
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 42px;
+        line-height: calc(50 / 42);
+    }
+}
+
+.offerings-text {
+    margin-bottom: 28px;
+
+    font-size: 14px;
+    line-height: calc(16 / 14);
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+        max-width: 526px;
+
+        font-size: 16px;
+        line-height: calc(19 / 16);
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: calc(24 / 16);
+    }
+}
+
+.offerings-list {
+    margin-bottom: 28px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+
+        flex-direction: row;
+        justify-content: center;
+        gap: 116px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 32px;
+
+        gap: 67px;
+    }
+}
+
+.offerings-subtitle {
+    margin-bottom: 16px;
+
+    font-size: 18px;
+    line-height: calc(21 / 18);
+
+    @media screen and (min-width: 1280px) {
+        font-size: 17px;
+        line-height: calc(24 / 17);
+    }
+}
+
+.offerings-desc {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+
+    @media screen and (min-width: 1280px) {
+        line-height: calc(21 / 14);
+    }
+}
+
+.offerings-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20.5px;
+    padding: 10px 29px 9px 30px;
+
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    color: var(--black-cl);
+    background-color: var(--white-cl);
+
+    border: 2px solid var(--dark-green-cl);
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: border var(--timing-function);
+
+    &:hover,
+    &:focus {
+        border: 2px solid var(--dark-green-hover-cl);
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 0;
+        padding: 10px 17px 10px 19px;
+        color: var(--main-txt-cl);
+    }
+}
+
+.offerings-submit-btn {
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
