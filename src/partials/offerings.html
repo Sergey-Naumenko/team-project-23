@@ -1,1 +1,85 @@
-<section class="offerings">offerings</section>
+<section class="offerings section">
+  <div class="container offerings-container">
+    <picture class="offerings-picture">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/offerings/offerings@1x-dk.webp 1x,
+          ./images/offerings/offerings@2x-dk.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/offerings/offerings@1x-dk.png 1x,
+          ./images/offerings/offerings@2x-dk.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/offerings/offerings@1x-tb.webp 1x,
+          ./images/offerings/offerings@2x-tb.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/offerings/offerings@1x-tb.png 1x,
+          ./images/offerings/offerings@2x-tb.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/offerings/offerings@1x-mb.webp 1x,
+          ./images/offerings/offerings@2x-mb.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/offerings/offerings@1x-mb.png 1x,
+          ./images/offerings/offerings@2x-mb.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="offerings-img"
+        src="./images/offerings/offerings@1x-mb.png"
+        alt="apple"
+      />
+    </picture>
+    <div class="offerings-right-side">
+      <h2 class="offerings-title">What’s Special About Our Offerings</h2>
+      <p class="offerings-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <ul class="offerings-list list">
+        <li class="offerings-list-item">
+          <h3 class="offerings-subtitle">Fasest Delivery</h3>
+          <p class="offerings-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li class="offerings-list-item">
+          <h3 class="offerings-subtitle">Easy to order</h3>
+          <p class="offerings-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+      <button class="offerings-btn" type="button">Order Now</button>
+      <button class="offerings-btn-more" type="button">Read More</button>
+    </div>
+  </div>
+</section>
