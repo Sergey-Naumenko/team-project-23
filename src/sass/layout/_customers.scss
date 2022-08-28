@@ -1,20 +1,20 @@
 .customers {
-    background-image: url(../images/customers/background@1x-mb-sm.jpg);
+    background-image: url(../images/customers/background@1x-mb-sm.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     background-size: cover;
 
     background-color: #F5F5F5;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/customers/background@2x-mb-sm.jpg);
+        background-image: url(../images/customers/background@2x-mb-sm.png);
     }
 
     @media screen and (min-width: 480px) {
-        background-image: url(../images/customers/background@1x-mb.jpg);
+        background-image: url(../images/customers/background@1x-mb.png);
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/customers/background@2x-mb.jpg);
+            background-image: url(../images/customers/background@2x-mb.png);
         }
     }
 
@@ -26,20 +26,20 @@
     @media screen and (min-width: 768px) {
         padding-top: 60px;
         padding-bottom: 120px;
-        background-image: url(../images/customers/background@1x-tb.jpg);
+        background-image: url(../images/customers/background@1x-tb.png);
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/customers/background@2x-tb.jpg);
+            background-image: url(../images/customers/background@2x-tb.png);
         }
     }
 
     @media screen and (min-width: 1280px) {
         padding-top: 100px;
         padding-bottom: 200px;
-        background-image: url(../images/customers/background@1x-dk.jpg);
+        background-image: url(../images/customers/background@1x-dk.png);
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/customers/background@2x-dk.jpg);
+            background-image: url(../images/customers/background@2x-dk.png);
         }
     }
 }
@@ -63,7 +63,7 @@
     line-height: calc(16 / 14);
     color: var(--main-txt-cl);
 
-    margin-bottom: 32px;
+    margin-bottom: 33px;
 
     @media screen and (min-width: 768px) {
         font-size: 16px;
