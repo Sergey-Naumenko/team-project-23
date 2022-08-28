@@ -20,13 +20,25 @@
 .header-logo {
   padding-top: 10px;
   padding-bottom: 10px;
-  }
+}
+
+.menu-icon {
+  fill: var(--dark-green-cl);
+  transition: fill var(--timing-function);
+}
+
+.menu-icon:hover,
+.menu-icon:focus,
+.menu-icon:active {
+  fill: var(--default-yellow-cl);
+}
 
 .menu-container {
   display: none;
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+  transition: opacity var(--timing-function);
 
   &.is-open {
     opacity: 1;
@@ -51,6 +63,12 @@
 .menu-nav-link {
   display: flex;
   padding: 16px;
+
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  background-color: fff;
+
+  transition: background-color var(--timing-function);
 
   .menu-nav-item &:hover,
   .menu-nav-item &:focus,
@@ -90,6 +108,27 @@
   }
 }
 
+.menu-btn--close {
+  fill: var(--black-cl);
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  position: absolute;
+  top: 11px;
+  right: 11px;
+}
+.menu-icon--close {
+  fill: var(--black-cl);
+}
+
 .header-nav {
   display: none;
 
@@ -113,7 +152,15 @@
   font-size: 14px;
   line-height: calc(16 / 14);
 
+  position: relative;
+
   color: #000000;
+  transition: color var(--timing-function);
+}
+
+.header-nav-link::after {
+  background-color: transparent;
+  transition: background-color var(--timing-function);
 }
 
 .header-nav-link:hover,
@@ -126,6 +173,7 @@
     width: 100%;
     height: 1px;
     background-color: var(--green-cl);
+    position: absolute;
   }
 }
 
@@ -136,15 +184,20 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+
+    width: 98px;
     height: 32px;
+
     font-size: 14px;
     line-height: calc(21 / 14);
     text-align: center;
-    background-color: var(--green-cl);
+
     border: none;
     border-radius: 30px;
     color: var(--main-txt-cl);
+    background-color: var(--green-cl);
+
+    transition: background-color var(--timing-function);
   }
 
   &:hover,
