@@ -206,10 +206,16 @@
   background-color: #ffffff;
   border: 1px solid var(--dark-green-cl);
   cursor: pointer;
+  transition: background-color var(--timing-function);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 12px;
   }
+}
+.footer__subscribe-btn:hover,
+.footer__subscribe-btn:focus,
+.footer__subscribe-btn:active {
+  background-color: var(--default-yellow-cl);
 }
 
 // !!ВРЕМЕННЫЙ КОСТЫЛЬ
