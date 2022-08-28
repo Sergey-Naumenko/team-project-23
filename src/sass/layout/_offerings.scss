@@ -126,15 +126,6 @@
   }
 }
 
-.offerings-list-item::before {
-  content: '';
-  width: 48px;
-  height: 48px;
-  margin-bottom: 8px;
-  background-size: contain;
-  background-image: url(../images/offerings/icon-deliv.svg);
-}
-
 .offerings-subtitle {
   margin-bottom: 16px;
 
@@ -145,6 +136,20 @@
     font-size: 17px;
     line-height: calc(24 / 17);
   }
+
+  &::before {
+    display: block;
+    content: ' ';
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+    background-size: contain;
+    background-image: url(../images/offerings/icon-deliv.svg);
+  }
+}
+
+.offerings-subtitle-order::before {
+  background-image: url(../images/offerings/icon-order.svg);
 }
 
 .offerings-desc {
@@ -188,9 +193,16 @@
 .offerings-btn-more {
   font-size: 13.6667px;
   line-height: calc(20 / 13.6667);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  padding: 7px 0;
+  // flex: none;
+  // order: 0;
+  // flex-grow: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+
   background-color: transparent;
   color: var(--black-cl);
   border: none;
