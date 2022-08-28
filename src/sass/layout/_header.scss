@@ -22,6 +22,17 @@
   padding-bottom: 10px;
 }
 
+.menu-icon {
+  fill: var(--dark-green-cl);
+  transition: fill var(--timing-function);
+}
+
+.menu-icon:hover,
+.menu-icon:focus,
+.menu-icon:active {
+  fill: var(--default-yellow-cl);
+}
+
 .menu-container {
   display: none;
   pointer-events: none;
@@ -98,6 +109,7 @@
 }
 
 .menu-btn--close {
+  fill: var(--black-cl);
   margin-left: auto;
   display: inline-flex;
   align-items: center;
@@ -112,6 +124,9 @@
   position: absolute;
   top: 11px;
   right: 11px;
+}
+.menu-icon--close {
+  fill: var(--black-cl);
 }
 
 .header-nav {
