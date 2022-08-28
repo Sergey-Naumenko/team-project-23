@@ -38,7 +38,7 @@
 .offerings-container {
   @media screen and (min-width: 1280px) {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: start;
     gap: 90px;
   }
@@ -174,8 +174,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   margin-right: 24px;
-  padding: 10px 20px;
+  margin-bottom: 57px;
+  padding: 8px 20px;
+
   font-weight: 500;
   font-size: 13px;
   line-height: calc(20 / 13);
