@@ -128,6 +128,7 @@
 }
 
 .slider {
+    position: relative;
     display: flex;
     align-items: flex-end;
     padding-right: 8px;
@@ -160,10 +161,10 @@
 
     @media screen and (max-width:1279px) {
         .hero__picture {
-
+            position: absolute;
             left: 422px;
             top: 235px;
-            z-index: 5;
+            z-index: 35;
             display: block;
         }
     }
