@@ -1,4 +1,6 @@
 .customers {
+    position: relative;
+
     background-image: url(../images/customers/background@1x-mb-sm.png);
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -63,7 +65,7 @@
     line-height: calc(16 / 14);
     color: var(--main-txt-cl);
 
-    margin-bottom: 33px;
+    margin-bottom: 32px;
 
     @media screen and (min-width: 768px) {
         font-size: 16px;
