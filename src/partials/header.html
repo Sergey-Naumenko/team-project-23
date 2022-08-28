@@ -1,25 +1,11 @@
 <header class="header">
   <div class="container header-container">
     <a href="./index.html" class="header-logo link">
-      <picture>
-        <source
-          media="(min-width: 1200px)"
-          srcset="./images/header/logo@_lg.svg"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="./images/header/logo@_md.svg"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="./images/header/logo@_sm.svg"
-        />
-        <img
-          class="header-logo-icon"
-          src="./images/header/logo@_lg.svg"
-          alt="Logo FoodSta"
-        />
-      </picture>
+      <img
+        class="header-logo-icon"
+        src="./images/header/logo@_lg.svg"
+        alt="Logo FoodSta"
+      />
     </a>
 
     <button class="menu-btn" data-menu-open>
@@ -71,6 +57,8 @@
         </li>
       </ul>
     </nav>
-    <button class="header-btn btn" type="button">Order Now</button>
+    <button class="header-btn btn" type="button" data-modal-open>
+      Order Now
+    </button>
   </div>
 </header>
