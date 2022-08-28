@@ -97,6 +97,23 @@
   }
 }
 
+.menu-btn--close {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  position: absolute;
+  top: 11px;
+  right: 11px;
+}
+
 .header-nav {
   display: none;
 
@@ -126,6 +143,11 @@
   transition: color var(--timing-function);
 }
 
+.header-nav-link::after {
+  background-color: transparent;
+  transition: background-color var(--timing-function);
+}
+
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--green-cl);
@@ -148,7 +170,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 100px;
+    width: 98px;
     height: 32px;
 
     font-size: 14px;
