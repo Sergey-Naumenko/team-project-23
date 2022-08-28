@@ -179,6 +179,7 @@
   color: var(--main-txt-cl);
 }
 
+// !!ВРЕМЕННЫЙ КОСТЫЛЬ
 .footer-input {
   width: 100%;
   padding: 12px;
@@ -191,6 +192,7 @@
   }
 }
 
+// !!ВРЕМЕННЫЙ КОСТЫЛЬ
 .footer-input::placeholder {
   font-size: 12px;
   line-height: calc(18 / 12);
@@ -198,6 +200,19 @@
   color: #505050;
 }
 
+// !!ВРЕМЕННЫЙ КОСТЫЛЬ
+.footer__subscribe-btn {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid var(--dark-green-cl);
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+}
+
+// !!ВРЕМЕННЫЙ КОСТЫЛЬ
 .footer-btn {
   display: flex;
   justify-content: center;
