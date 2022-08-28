@@ -27,6 +27,7 @@
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+  transition: opacity var(--timing-function);
 
   &.is-open {
     opacity: 1;
