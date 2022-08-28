@@ -154,7 +154,17 @@
 
     @media screen and (max-width:1279px) {
         .hero-picture__tb {
-            display: inline-block;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width:1279px) {
+        .hero__picture {
+
+            left: 422px;
+            top: 235px;
+            z-index: 5;
+            display: block;
         }
     }
 
