@@ -21,9 +21,16 @@
             <div class="form-container">
     
                 <form class="subscribe-form">
-                    <label class="subscribe-form__label">
+                    <div class="container-input"> 
                         <input class="subscribe-form__input" type="email" name="email" placeholder="Enter your email" required />
+                    <label class="subscribe-form__alert">
+                        <svg class="alert__icon" width="12" height="12">
+							<use href="./images/icons.svg#icon-alert"></use>
+						</svg>
+                        <p class="alert__txt">Not a valid email address (example@email.com)</p>
                     </label>
+                </div>
+                
                     <button class="subscribe-btn" type="submit">Subscribe</button>
                 </form>
             </div>

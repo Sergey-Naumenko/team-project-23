@@ -86,6 +86,12 @@ margin-bottom: 40px;
 
 }
 
+.subscribe-form {
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+}
+
 .subscribe-form__input {
 width: 100%;
 height: 42px;
@@ -107,21 +113,49 @@ color: #505050;
     border: 0.854167px solid var(--invalid-cl);
 }
 
+&:invalid:required:not(:placeholder-shown)~.subscribe-form__alert {
+    visibility: visible;
+    display: flex;
+}
+
+
 &:valid:required:not(:placeholder-shown) {
     border: 0.854167px solid var(--valid-cl);
 }
 
 @media screen and (min-width: 480px) {
     width: 100%;
+    margin-bottom: 0;
 
 }
 
 @media screen and (min-width:768px) {
     margin-bottom: 0;
     width: 394px;
+    
 
 }
 
+}
+
+
+.container-input {
+    display: block;
+    text-align: left;
+}
+
+.subscribe-form__alert {
+   gap: 4px;
+   margin-top: 4px;
+   display: none;
+   visibility: hidden;
+}
+
+.alert__txt {
+
+    font-size: 10px;
+    line-height: 150%;
+    color: var(--invalid-cl);
 }
 
 .subscribe-btn {
