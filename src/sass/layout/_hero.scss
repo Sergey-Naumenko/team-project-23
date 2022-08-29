@@ -248,10 +248,15 @@
 
 .slider-open__left {
     position: absolute;
-    left: 400px;
-    top: 395px;
 
     z-index: 8;
+}
+
+@media screen and (min-width:768px) {
+    .slider-open__left {
+        left: 400px;
+        top: 367px;
+    }
 }
 
 @media screen and (min-width:1280px) {
@@ -263,10 +268,15 @@
 
 .slider-open__right {
     position: absolute;
-    left: 736px;
-    top: 367px;
 
     z-index: 8;
+}
+
+@media screen and (min-width:768px) {
+    .slider-open__right {
+        left: 710px;
+        top: 367px;
+    }
 }
 
 @media screen and (min-width:1280px) {
