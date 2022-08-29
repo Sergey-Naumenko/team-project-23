@@ -13,10 +13,17 @@
             </div>
             <div class="slider">
                 <div class="slider-herro--fon">
-                    <img class="herro-picture--slider" media="(min-width: 768px)"
-                        src="./images/hero/ellipse-12@1x.png, ./images/hero/ellipse-tb2@2x.png" alt="menu">
-                    <img class="herro-picture__slider" media="(min-width: 1280px)"
-                        src="./images/hero/ellipse-11@1x.png, ./images/hero/ellipse-dt2@2x.png" alt="menu">
+                    <picture>
+                        <source media="(min-width: 1280px)" srcset="
+                            ./images/hero/ellipse-11@1x.png,
+                            ./images/hero/ellipse-dt2@2x.png
+                          " />
+
+                        <source media="(min-width: 768px)" srcset="
+                            ./images/hero/ellipse-12@1x.png,
+                            ./images/hero/ellipse-tb2@2x.png
+                          " />
+                    </picture>
                 </div>
                 <div class="slider-herro">
                     <img class="herro-picture--slider" media="(min-width: 768px)" src="./images/hero/tb-1@1x.png"
