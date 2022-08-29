@@ -2,22 +2,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 72px;
+    // padding-top: 72px;
 
 
 
     .herro__inform {
         display: flex;
         flex-direction: column;
-
-        // padding-bottom: 56px;
         text-align: start;
-
-        // @media screen and (min-width:768px) {
-        //     padding-bottom: 73px;
-        //     // width: 100%;
-
-        // }
 
         @media screen and (min-width:1280px) {
 
@@ -27,9 +19,6 @@
 
     }
 
-    // max-height: 66px;
-    // margin-right: 152px;
-    // width: 502px;
     @media screen and (min-width:768px) {
         .herro__inform {
             width: 100%;
@@ -38,22 +27,20 @@
 
 
     .herro__titl {
+
         display: inline-block;
-        // padding-bottom: 56px;
         margin-bottom: 28px;
-        // padding-bottom: 28px;
         max-width: 280px;
         font-style: normal;
         font-weight: 700;
         font-size: 28px;
         line-height: 1.17;
 
-        color: #2c2c2c;
+        color: var(--main-txt-cl);
 
         @media screen and (min-width:768px) {
             text-align: start;
             min-width: 480px;
-
 
             margin-bottom: 44px;
             font-size: 42px;
@@ -61,7 +48,7 @@
         }
 
         @media screen and (min-width:1280px) {
-            padding-top: 158px;
+            padding-top: 159px;
             max-width: 502px;
             font-size: 48px;
             line-height: 120%;
@@ -91,14 +78,14 @@
         font-size: 14px;
         line-height: 150%;
 
-        color: #2C2C2C;
+        color: var(--main-txt-cl);
 
 
         @media screen and (min-width:768px) {
 
             max-width: 336px;
             max-height: 120px;
-            // margin-bottom: 40px;
+            margin-bottom: 40px;
             font-size: 16px;
             line-height: 150%;
 
@@ -218,11 +205,16 @@
 .icon-herro {
     background: #FEFEFE;
 
-    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    // border-radius: 8px;
-    // transform: rotate(-90deg);
-    // cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    cursor: pointer;
 
+    // transform: rotate(-90deg);
+}
+
+.icon-herro {
+    padding: 3px 0;
+    fill: #2C2C2C;
 }
 
 .icon-herro--color {
@@ -236,6 +228,8 @@
     .icon-herro {
         width: 28px;
         height: 34px;
+        padding: 3px 0;
+        fill: #2C2C2C;
     }
 }
 
@@ -243,6 +237,8 @@
     .icon-herro {
         width: 40px;
         height: 48px;
+        padding: 5px 0;
+
     }
 }
 
@@ -261,7 +257,7 @@
 
 @media screen and (min-width:1280px) {
     .slider-open__left {
-        left: 656px;
+        left: 659px;
         top: 352px;
     }
 }
@@ -281,7 +277,7 @@
 
 @media screen and (min-width:1280px) {
     .slider-open__right {
-        left: 1224px;
+        left: 1220px;
         top: 352px;
     }
 }
