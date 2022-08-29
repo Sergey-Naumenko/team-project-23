@@ -87,7 +87,7 @@
   height: 100%;
   width: 100%;
 
-  padding: 28px;
+  padding: 17px;
 
   border-width: 11px;
   border-style: solid;
@@ -97,13 +97,13 @@
   transition: border-color var(--timing-function);
 
   @media screen and (min-width: 768px) {
-    padding: 34px;
+    padding: 20px;
 
     border-width: 14px;
     border-radius: 167.59px;
   }
   @media screen and (min-width: 1280px) {
-    padding: 40px;
+    padding: 24px;
 
     border-width: 16px;
     border-radius: 197.5px;
