@@ -128,6 +128,11 @@
         color: #2c2c2c;
     }
 
+    .herro__btn--text:hover,
+    .herro__btn--text:focus {
+        color: var(--main-txt-cl);
+    }
+
 }
 
 .slider {
@@ -145,7 +150,7 @@
 .slider-herro--fon {
     position: absolute;
     left: 408px;
-    top: 221px;
+    top: 149px;
     z-index: 3;
     min-width: 320px;
     min-height: 320px;
@@ -164,11 +169,11 @@
     }
 
     @media screen and (min-width:1280px) {
-        background-image:
-            url(../images/herro/ellipse-dt-1@1x.png), url(../images/herro/ellipse-dt-2@2x.png);
+        // background-image:
+        //     url(../images/herro/ellipse-11@1x.png), url(../images/herro/ellipse-dt2@2x.png);
 
         left: 670px;
-        top: 86px;
+        top: 14px;
         z-index: 3;
     }
 }
@@ -179,7 +184,7 @@
     min-height: 292px;
     padding-right: 54px;
     left: 422px;
-    top: 235px;
+    top: 163px;
     z-index: 7;
     display: block;
 
@@ -197,7 +202,7 @@
 
     @media screen and (min-width:1280px) {
         left: 695px;
-        top: 113px;
+        top: 40px;
     }
 }
 
@@ -214,7 +219,13 @@
 
 .icon-herro {
     padding: 3px 0;
-    fill: #2C2C2C;
+    fill: var(--main-txt-cl);
+}
+
+.icon-herro:hover {
+    fill: #7EB101;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
 
 .icon-herro--color {
@@ -229,7 +240,10 @@
         width: 28px;
         height: 34px;
         padding: 3px 0;
-        fill: #2C2C2C;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+        // transform: rotate(90deg);
+        fill: var(--main-txt-cl);
     }
 }
 
@@ -239,26 +253,29 @@
         height: 48px;
         padding: 5px 0;
 
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        // // transform: rotate(-90deg);
+
     }
 }
 
 .slider-open__left {
     position: absolute;
-
     z-index: 8;
 }
 
 @media screen and (min-width:768px) {
     .slider-open__left {
         left: 400px;
-        top: 367px;
+        top: 295px;
     }
 }
 
 @media screen and (min-width:1280px) {
     .slider-open__left {
         left: 659px;
-        top: 352px;
+        top: 280px;
     }
 }
 
@@ -271,13 +288,13 @@
 @media screen and (min-width:768px) {
     .slider-open__right {
         left: 710px;
-        top: 367px;
+        top: 295px;
     }
 }
 
 @media screen and (min-width:1280px) {
     .slider-open__right {
         left: 1220px;
-        top: 352px;
+        top: 280px;
     }
 }
