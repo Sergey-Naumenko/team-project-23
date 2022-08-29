@@ -161,14 +161,15 @@
   }
 }
 
-.footer-form {
+.footer__subscribe-form {
   margin-left: auto;
 }
 
-.footer-input-field {
+// !!!
+.subscribe-form__label {
 }
 
-.subscribe-label {
+.footer__subscribe-label {
   display: block;
   margin-bottom: 12px;
 
@@ -180,32 +181,35 @@
 }
 
 // !!ВРЕМЕННЫЙ КОСТЫЛЬ
-.footer-input {
-  width: 100%;
-  padding: 12px;
 
-  border: 0.854167px solid var(--default-yellow-cl);
-  border-radius: 30px;
+// .footer-input {
+//   width: 100%;
+//   padding: 12px;
 
-  @media screen and (min-width: 768px) {
-    width: 279px;
-  }
-}
+//   border: 0.854167px solid var(--default-yellow-cl);
+//   border-radius: 30px;
 
-// !!ВРЕМЕННЫЙ КОСТЫЛЬ
-.footer-input::placeholder {
-  font-size: 12px;
-  line-height: calc(18 / 12);
-
-  color: #505050;
-}
+//   @media screen and (min-width: 768px) {
+//     width: 279px;
+//   }
+// }
 
 // !!ВРЕМЕННЫЙ КОСТЫЛЬ
+
+// .footer-input::placeholder {
+//   font-size: 12px;
+//   line-height: calc(18 / 12);
+
+//   color: #505050;
+// }
+
+
+// !! модификатор кнопки подписки
 .footer__subscribe-btn {
   margin-bottom: 20px;
   background-color: #ffffff;
-  border: 1px solid var(--dark-green-cl);
-  cursor: pointer;
+  border: 0.85px solid var(--dark-green-cl);
+
   transition: background-color var(--timing-function);
 
   @media screen and (min-width: 768px) {
@@ -219,29 +223,30 @@
 }
 
 // !!ВРЕМЕННЫЙ КОСТЫЛЬ
-.footer-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // margin-left: auto;
-  margin-bottom: 20px;
-  padding: 11px 22px;
 
-  background: #ffffff;
-  border: 0.854167px solid #7eb101;
-  border-radius: 30px;
+// .footer-btn {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-left: auto;
+//   margin-bottom: 20px;
+//   padding: 11px 22px;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 150%;
-  /* identical to box height, or 20px */
+//   background: #ffffff;
+//   border: 0.854167px solid #7eb101;
+//   border-radius: 30px;
 
-  color: #2c2c2c;
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 13px;
+//   line-height: 150%;
+//   /* identical to box height, or 20px */
 
-  cursor: pointer;
-}
+//   color: #2c2c2c;
+
+//   cursor: pointer;
+// }
 
 // footer input description styles
 .footer-subscribe-text {
