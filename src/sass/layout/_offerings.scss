@@ -132,9 +132,9 @@
   @media screen and (min-width: 768px) {
     margin-right: 84px;
   }
-@media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     margin-right: 0;
-}
+  }
 }
 
 .offerings-subtitle {
@@ -180,7 +180,6 @@
   margin-right: 24px;
   padding: 8px 20px;
 
-  font-weight: 500;
   font-size: 13px;
   line-height: calc(20 / 13);
   color: var(--main-txt-cl);
@@ -198,9 +197,9 @@
     border: 2px solid var(--dark-green-hover-cl);
   }
 
-@media screen and (min-width: 768px) {
-  margin-bottom: 0;
-}
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 
   @media screen and (min-width: 1280px) {
     margin-right: 0;
@@ -212,7 +211,7 @@
   font-size: 13.6667px;
   line-height: calc(20 / 13.6667);
   padding: 7px 0;
- 
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
