@@ -166,11 +166,8 @@
   align-items: flex-end;
 }
 
-// !!!
+// label
 .subscribe-form__label {
-}
-
-.footer__subscribe-label {
   display: block;
   margin-bottom: 12px;
 
@@ -183,39 +180,20 @@
 
 .footer-subscribe-form__input {
   margin-bottom: 20px;
-  @media screen and (min-width:768px) {
-    
-  
-  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
   }
 }
 
 .footer__subscribe-form__alert {
- bottom: 12px;
+  @media screen and (max-width: 767px) {
+    top: 75px;
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 12px;
+  }
 }
-
-// !!ВРЕМЕННЫЙ КОСТЫЛЬ
-
-// .footer-input {
-//   width: 100%;
-//   padding: 12px;
-
-//   border: 0.854167px solid var(--default-yellow-cl);
-//   border-radius: 30px;
-
-//   @media screen and (min-width: 768px) {
-//     width: 279px;
-//   }
-// }
-
-// !!ВРЕМЕННЫЙ КОСТЫЛЬ
-
-// .footer-input::placeholder {
-//   font-size: 12px;
-//   line-height: calc(18 / 12);
-
-//   color: #505050;
-// }
 
 // !! модификатор кнопки подписки
 .footer__subscribe-btn {
@@ -234,32 +212,6 @@
 .footer__subscribe-btn:active {
   background-color: var(--default-yellow-cl);
 }
-
-// !!ВРЕМЕННЫЙ КОСТЫЛЬ
-
-// .footer-btn {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-left: auto;
-//   margin-bottom: 20px;
-//   padding: 11px 22px;
-
-//   background: #ffffff;
-//   border: 0.854167px solid #7eb101;
-//   border-radius: 30px;
-
-//   font-family: 'Roboto';
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 13px;
-//   line-height: 150%;
-//   /* identical to box height, or 20px */
-
-//   color: #2c2c2c;
-
-//   cursor: pointer;
-// }
 
 // footer input description styles
 .footer-subscribe-text {
