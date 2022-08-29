@@ -17,26 +17,26 @@
     <!--Modal menu-->
     <div class="menu-container" data-menu>
       <button class="menu-btn--close" data-menu-close>
-        <svg class="menu-icon menu-icon--close" width="11" height="11">
+        <svg class="menu-icon--close" width="24" height="24">
           <use href="./images/icons.svg#icon-close_menu"></use>
         </svg>
       </button>
 
       <ul class="menu-nav-list list">
         <li class="menu-nav-item">
-          <a class="menu-nav-link link" href="#Home">Home</a>
+          <a class="menu-nav-link link" href="#home">Home</a>
         </li>
         <li class="menu-nav-item">
-          <a class="menu-nav-link link" href="#About">About</a>
+          <a class="menu-nav-link link" href="#about">About</a>
         </li>
         <li class="menu-nav-item">
-          <a class="menu-nav-link link" href="#Service">Service</a>
+          <a class="menu-nav-link link" href="#service">Service</a>
         </li>
         <li class="menu-nav-item">
-          <a class="menu-nav-link link" href="#Menu">Menu</a>
+          <a class="menu-nav-link link" href="#menu">Menu</a>
         </li>
         <li class="menu-nav-item">
-          <a class="menu-nav-link link" href="#Contact">Contact</a>
+          <a class="menu-nav-link link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -50,16 +50,16 @@
           >
         </li>
         <li class="header-item">
-          <a class="header-nav-link link" href="#About">About</a>
+          <a class="header-nav-link link" href="#about">About</a>
         </li>
         <li class="header-item">
-          <a class="header-nav-link link" href="#Service">Service</a>
+          <a class="header-nav-link link" href="#service">Service</a>
         </li>
         <li class="header-item">
-          <a class="header-nav-link link" href="#Menu">Menu</a>
+          <a class="header-nav-link link" href="#menu">Menu</a>
         </li>
         <li class="header-item">
-          <a class="header-nav-link link" href="#Contact">Contact</a>
+          <a class="header-nav-link link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -68,3 +68,94 @@
     </button>
   </div>
 </header>
+
+<div class="backdrop backdrop--is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-btn modal-btn--close" data-modal-close>
+      <svg class="modal-icon modal-icon--close" width="24" height="24">
+        <use href="./images/icons.svg#icon-close_menu"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form" name="order-form" autocomplete="on">
+      <strong class="modal-title">Order Form</strong>
+
+      <label class="modal-field">
+        <input
+          class="modal-input"
+          type="text"
+          name="user-name"
+          placeholder="Your name"
+          required
+          minlength="3"
+          maxlenght="25"
+        />
+        <span class="modal-desc">Name</span>
+        <svg class="modal-form-icon" width="11" height="11">
+          <use
+            class="modal-form-warning"
+            href="./images/icons.svg#icon-warning"
+          ></use>
+        </svg>
+        <span class="modal-form-notfication"
+          >The name must be between 3 and 25 characters</span
+        >
+        <span class="modal-form-notfication-required"
+          >This field is required</span
+        >
+      </label>
+
+      <label class="modal-field">
+        <input
+          class="modal-input"
+          type="tel"
+          name="tel"
+          placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          required
+          minlength="13"
+          maxlenght="13"
+        />
+
+        <span class="modal-desc">Phone number</span>
+        <svg class="modal-form-icon" width="11" height="11">
+          <use
+            class="modal-form-warning"
+            href="./images/icons.svg#icon-warning"
+          ></use>
+        </svg>
+        <span class="modal-form-notfication">
+          This phone must be in the format 099 000 00 00</span
+        >
+        <span class="modal-form-notfication-required"
+          >This field is required</span
+        >
+      </label>
+
+      <label class="modal-field modal-field--last">
+        <input
+          class="modal-input"
+          type="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+
+        <span class="modal-desc">E-mail</span>
+        <svg class="modal-form-icon" width="11" height="11">
+          <use
+            class="modal-form-warning"
+            href="./images/icons.svg#icon-warning"
+          ></use>
+        </svg>
+        <span class="modal-form-notfication"
+          >Please enter a valid email address</span
+        >
+        <span class="modal-form-notfication-required"
+          >This field is required</span
+        >
+      </label>
+
+      <button class="modal-bnt modal-btn--submit" type="submit">Send</button>
+    </form>
+  </div>
+</div>
