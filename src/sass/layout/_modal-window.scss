@@ -178,6 +178,11 @@
   transform: translate(-50%, 20px) scale(1);
 }
 
+.modal-input:invalid:required:not(:placeholder-shown)
+  ~ .modal-form-notfication--last {
+  left: 102px;
+}
+
 .modal-input:invalid:required:not(:placeholder-shown) ~ .modal-btn--submit {
   border: rgba(255, 112, 93, 1);
 }
