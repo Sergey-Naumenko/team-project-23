@@ -60,80 +60,94 @@
         display: flex;
         flex-direction: column;
         padding-top: 60px;
-        padding-bottom: 73px;
-
-        @media screen and (min-width:1280px) {
-
-            padding-top: 0;
-
-        }
-    }
-
-    .herro__text {
-        display: inline-block;
-        min-width: 266px;
-        margin-bottom: 34px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 150%;
-
-        color: var(--main-txt-cl);
+        padding-bottom: 50px;
 
 
         @media screen and (min-width:768px) {
 
-            max-width: 336px;
-            max-height: 120px;
-            margin-bottom: 40px;
-            font-size: 16px;
-            line-height: 150%;
-
-        }
-
-        @media screen and (min-width:1280px) {
-
-            max-width: 502px;
-            max-height: 69px;
+            padding-bottom: 73px;
 
         }
     }
 
-    .herro__btn {
+    @media screen and (min-width:1280px) {
 
-        display: flex;
-        align-items: center;
-        // height: 32px;
-        width: 98px;
+        padding-top: 0;
 
-        padding: 6px 0;
-        background: #bbf330;
-        border-radius: 30px;
-        cursor: pointer;
-        border: none;
     }
-
-    .herro__btn:hover,
-    .herro__btn:focus {
-        color: #B5FF00;
-    }
-
-    .herro__btn--text {
-        display: inline-block;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 150%;
-        color: #2c2c2c;
-    }
-
-    .herro__btn--text:hover,
-    .herro__btn--text:focus {
-        color: var(--main-txt-cl);
-    }
-
 }
+
+.herro__text {
+    display: inline-block;
+    min-width: 266px;
+    margin-bottom: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: var(--main-txt-cl);
+
+
+    @media screen and (min-width:768px) {
+
+        max-width: 336px;
+        max-height: 120px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 150%;
+
+    }
+
+    @media screen and (min-width:1280px) {
+
+        max-width: 502px;
+        max-height: 69px;
+
+    }
+}
+
+
+
+
+.herro-btn {
+
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 98px;
+
+    padding: 6px 0;
+    background: var(--green-cl);
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.herro__btn-text {
+
+    display: inline-block;
+
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: var(--main-txt-cl);
+}
+
+.herro-btn:hover,
+.herro-btn:focus {
+    // color: var(--green-hover-cl);
+    background: var(--green-hover-cl);
+}
+
+.herro__btn-text:hover,
+.herro__btn-text:focus {
+    color: var(--main-txt-cl);
+}
+
+
 
 .slider {
     margin: 0;
@@ -208,7 +222,7 @@
 
 
 .icon-herro {
-    background: #FEFEFE;
+    background: var(--white-cl);
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
@@ -223,7 +237,7 @@
 }
 
 .icon-herro:hover {
-    fill: #7EB101;
+    fill: var(--dark-green-cl);
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
