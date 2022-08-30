@@ -103,7 +103,7 @@
 
         display: flex;
         align-items: center;
-        // height: 32px;
+        height: 32px;
         width: 98px;
 
         padding: 6px 0;
@@ -128,10 +128,10 @@
         color: var(--main-txt-cl);
     }
 
-    .herro__btn--text:hover,
-    .herro__btn--text:focus {
-        color: var(--main-txt-cl);
-    }
+    // .herro__btn--text:hover,
+    // .herro__btn--text:focus {
+    //     color: var(--main-txt-cl);
+    // }
 
 }
 
