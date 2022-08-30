@@ -161,51 +161,46 @@
   }
 }
 
-.footer-form {
+.footer__subscribe-form {
   margin-left: auto;
+  align-items: flex-end;
 }
 
-.footer-input-field {
-}
-
-.subscribe-label {
+// label
+.subscribe-form__label {
   display: block;
   margin-bottom: 12px;
 
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
 
   color: var(--main-txt-cl);
 }
 
-// !!ВРЕМЕННЫЙ КОСТЫЛЬ
-.footer-input {
-  width: 100%;
-  padding: 12px;
-
-  border: 0.854167px solid var(--default-yellow-cl);
-  border-radius: 30px;
-
+.footer-subscribe-form__input {
+  margin-bottom: 20px;
   @media screen and (min-width: 768px) {
-    width: 279px;
+    margin-bottom: 12px;
   }
 }
 
-// !!ВРЕМЕННЫЙ КОСТЫЛЬ
-.footer-input::placeholder {
-  font-size: 12px;
-  line-height: calc(18 / 12);
+.footer__subscribe-form__alert {
+  @media screen and (max-width: 767px) {
+    top: 75px;
+  }
 
-  color: #505050;
+  @media screen and (min-width: 768px) {
+    bottom: 12px;
+  }
 }
 
-// !!ВРЕМЕННЫЙ КОСТЫЛЬ
+// !! модификатор кнопки подписки
 .footer__subscribe-btn {
   margin-bottom: 20px;
   background-color: #ffffff;
-  border: 1px solid var(--dark-green-cl);
-  cursor: pointer;
+  border: 0.85px solid var(--dark-green-cl);
+
   transition: background-color var(--timing-function);
 
   @media screen and (min-width: 768px) {
@@ -216,31 +211,6 @@
 .footer__subscribe-btn:focus,
 .footer__subscribe-btn:active {
   background-color: var(--default-yellow-cl);
-}
-
-// !!ВРЕМЕННЫЙ КОСТЫЛЬ
-.footer-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // margin-left: auto;
-  margin-bottom: 20px;
-  padding: 11px 22px;
-
-  background: #ffffff;
-  border: 0.854167px solid #7eb101;
-  border-radius: 30px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 150%;
-  /* identical to box height, or 20px */
-
-  color: #2c2c2c;
-
-  cursor: pointer;
 }
 
 // footer input description styles

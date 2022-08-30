@@ -6,8 +6,8 @@
           <img
             src="./images/footer/logo@_lg.svg"
             alt="Logo FoodSta"
-            width="69px"
-            height="51px"
+            width="69"
+            height="51"
         /></a>
         <ul class="list footer-nav-list">
           <li class="item footer-nav-item">
@@ -28,35 +28,45 @@
         </ul>
       </nav>
 
-      <form class="footer-form">
-        <label class="footer-input-field">
-          <span class="subscribe-label">Subscribe</span>
+      <form class="subscribe-form footer__subscribe-form">
+        <div class="container-input">
+          <label for="footer-email" class="subscribe-form__label">
+            Subscribe
+          </label>
           <input
             class="subscribe-form__input footer-subscribe-form__input"
             type="email"
             name="email"
-            id="email"
+            id="footer-email"
             placeholder="Enter your email"
             required
           />
-        </label>
+          <button class="subscribe-btn footer__subscribe-btn" type="submit">
+            Subscribe
+          </button>
 
-        <button class="subscribe-btn footer__subscribe-btn" type="submit">
-          Subscribe
-        </button>
-        <p class="footer-subscribe-text">
-          By subscribing you agree to with our
-          <a
-            class="external-link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-            >Privacy Policy</a
-          >
-        </p>
+          <p class="subscribe-form__alert footer__subscribe-form__alert">
+            <svg class="alert__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-alert"></use>
+            </svg>
+            <span class="alert__txt"
+              >Not a valid email address (example@email.com)</span
+            >
+          </p>
+
+          <p class="footer-subscribe-text">
+            By subscribing you agree to with our
+            <a
+              class="external-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
       </form>
     </div>
-
     <div class="footer-bottom">
       <ul class="list external-list">
         <li>
