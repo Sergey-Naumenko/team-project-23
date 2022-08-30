@@ -107,7 +107,7 @@
         width: 98px;
 
         padding: 6px 0;
-        background: #bbf330;
+        background: --green-cl;
         border-radius: 30px;
         cursor: pointer;
         border: none;
@@ -115,7 +115,7 @@
 
     .herro__btn:hover,
     .herro__btn:focus {
-        color: #B5FF00;
+        color: var(--green-hover-cl);
     }
 
     .herro__btn--text {
@@ -223,7 +223,7 @@
 }
 
 .icon-herro:hover {
-    fill: #7EB101;
+    fill: var(--valid-cl);
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
