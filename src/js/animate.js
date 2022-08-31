@@ -2,5 +2,5 @@
 document.documentElement.style.setProperty('--animate-duration', '1s');
 
 // All animations will take half the time to accomplish
-document.documentElement.style.setProperty('--animate-duration', '1s');
+document.documentElement.style.setProperty('--animate-duration', '1.5s');
 
