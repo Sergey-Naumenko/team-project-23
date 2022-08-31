@@ -2,72 +2,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    // padding-top: 72px;
-
-
-
-    .herro__inform {
-        display: flex;
-        flex-direction: column;
-        text-align: start;
-
-        @media screen and (min-width:1280px) {
-
-            padding-bottom: 236px;
-
-        }
-
-    }
+    padding-top: 60px;
+    padding-bottom: 50px;
 
     @media screen and (min-width:768px) {
-        .herro__inform {
-            width: 100%;
-        }
-    }
 
+        padding-bottom: 73px;
 
-    .herro__titl {
-
-        display: inline-block;
-        margin-bottom: 28px;
-        max-width: 280px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 1.17;
-
-        color: var(--main-txt-cl);
-
-        @media screen and (min-width:768px) {
-            text-align: start;
-            min-width: 480px;
-
-            margin-bottom: 44px;
-            font-size: 42px;
-            line-height: 120%;
-        }
-
-        @media screen and (min-width:1280px) {
-            padding-top: 159px;
-            max-width: 502px;
-            font-size: 48px;
-            line-height: 120%;
-            margin-bottom: 28px;
-        }
-    }
-
-    .herro-content {
-        display: flex;
-        flex-direction: column;
-        padding-top: 60px;
-        padding-bottom: 50px;
-
-
-        @media screen and (min-width:768px) {
-
-            padding-bottom: 73px;
-
-        }
     }
 
     @media screen and (min-width:1280px) {
@@ -75,6 +16,62 @@
         padding-top: 0;
 
     }
+}
+
+
+.herro__inform {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+    @media screen and (min-width:1280px) {
+
+        padding-bottom: 236px;
+
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .herro__inform {
+        width: 100%;
+    }
+}
+
+
+.herro__titl {
+
+    display: inline-block;
+    margin-bottom: 28px;
+    max-width: 280px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+
+    color: var(--main-txt-cl);
+
+    @media screen and (min-width:768px) {
+        text-align: start;
+        min-width: 480px;
+
+        margin-bottom: 44px;
+        font-size: 42px;
+        line-height: 120%;
+    }
+
+    @media screen and (min-width:1280px) {
+        padding-top: 159px;
+        max-width: 502px;
+        font-size: 48px;
+        line-height: 120%;
+        margin-bottom: 28px;
+    }
+}
+
+.herro-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .herro__text {
@@ -107,9 +104,6 @@
     }
 }
 
-
-
-
 .herro-btn {
 
     display: flex;
@@ -122,6 +116,7 @@
     border-radius: 30px;
     cursor: pointer;
     border: none;
+    transform: background-color var(--timing-function);
 }
 
 .herro__btn-text {
@@ -137,13 +132,15 @@
 }
 
 .herro-btn:hover,
-.herro-btn:focus {
-    // color: var(--green-hover-cl);
-    background: var(--green-hover-cl);
+.herro-btn:focus,
+.herro-btn:active {
+
+    background-color: var(--green-hover-cl);
 }
 
 .herro__btn-text:hover,
-.herro__btn-text:focus {
+.herro__btn-text:focus,
+.herro__btn-text:active {
     color: var(--main-txt-cl);
 }
 
@@ -171,7 +168,7 @@
     // padding-right: 40px;
 
     @media screen and (min-width:1279px) {
-        .herro-picture--slider {
+        .herro-picture__tabl {
             display: none;
         }
     }
@@ -183,8 +180,6 @@
     }
 
     @media screen and (min-width:1280px) {
-        // background-image:
-        //     url(../images/herro/ellipse-11@1x.png), url(../images/herro/ellipse-dt2@2x.png);
 
         left: 670px;
         top: 14px;
@@ -194,6 +189,7 @@
 
 .slider-herro {
     position: absolute;
+    margin: 0;
     min-width: 292px;
     min-height: 292px;
     padding-right: 54px;
@@ -203,13 +199,13 @@
     display: block;
 
     @media screen and (min-width:1279px) {
-        .herro-picture--slider {
+        .herro-picture__tabl {
             display: none;
         }
     }
 
     @media screen and (max-width:1279px) {
-        .herro-picture--dish {
+        .herro-picture__desc {
             display: none;
         }
     }
@@ -236,6 +232,8 @@
     fill: var(--main-txt-cl);
 }
 
+.icon-herro:active,
+.icon-herro:focus,
 .icon-herro:hover {
     fill: var(--dark-green-cl);
 
@@ -312,3 +310,8 @@
         top: 280px;
     }
 }
+
+
+// .slider {
+//     transform: translateX(100%)
+// }
