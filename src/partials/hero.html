@@ -1,53 +1,67 @@
-<section class="herro" id="hero">
-    <div class="herro__container container">
-        <div class="herro-content">
-            <h1 class="herro__titl">Enjoy Your Favorite Food From Anywhere</h1>
-            <div class="herro__inform">
-                <p class="herro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    varius
-                    enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
-                    nulla, ut commodo diam libero vitae erat.</p>
-                <button class="herro-btn herro__btn-text" data-modal-open-1>
-                    Order Now
-                </button>
-            </div>
-            <div class="slider">
-                <div class="slider-herro--fon">
-                    <img class="herro-picture__slider" srcset="./images/hero/ellipse-dt-2@2x.png"
-                        src="./images/hero/ellipse-11el-dt.jpg" alt="menu" width="580" height="580">
-                    <img class="herro-picture__tabl" srcset="./images/hero/ellipse-tb-2@2x.png"
-                        src="./images/hero/ellipse-12el-tb.jpg" alt="menu" width="320" height="320">
-                </div>
-                <div class="slider-herro">
-                    <img class="herro-picture__desc" srcset="./images/hero/dt-1@2x.webp" src="./images/hero/dt-1.jpg"
-                        alt="menu" width="528" height="528">
-                    <img class="herro-picture__tabl" srcset="./images/hero/tb-1@2x.webp" src="./images/hero/tb-1.jpg"
-                        alt="menu" width="292" height="292" />
-
-                </div>
-                <!-- <div class="slider-herro">
-                    <img class="herro-picture__desc slider-2" srcset="./images/hero/dt-2@2x.webp"
-                        src="./images/hero/dt-2.jpg" alt="menu" width="528" height="528">
-                    <img class="herro-picture__tabl slider-2" srcset="./images/hero/tb-2@2x.webp"
-                        src="./images/hero/tb-2.jpg" alt="menu" width="292" height="292" />
-                </div>
-                <div class="slider-herro">
-                    <img class="herro-picture__desc slider-3" srcset="./images/hero/dt-3@2x.webp"
-                        src="./images/hero/dt.jpg" alt="menu" width="528" height="528">
-                    <img class="herro-picture__tabl slider-3" srcset="./images/hero/tb-3@2x.webp"
-                        src="./images/hero/tb.jpg" alt="menu" width="292" height="292" />
-                </div> -->
-                <div class="slider-open__left">
-                    <svg class="icon-herro" width="100%" height="34">
-                        <use class="icon-left" href="./images/hero/icons.svg#icon-dt-vol-l"></use>
-                    </svg>
-                </div>
-                <div class="slider-open__right">
-                    <svg class="icon-herro" width="100%" height="34">
-                        <use class="icon-right" href="./images/hero/icons.svg#icon-dt-vol-r"></use>
-                    </svg>
-                </div>
-            </div>
-        </div>
+<section class="hero" id="hero">
+  <div class="container">
+    <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+    <div class="hero__inform">
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <button class="hero-btn hero__btn-text" data-modal-open-1>
+        Order Now
+      </button>
     </div>
+    <div class="slider">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper swiper-border">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              class="slider-img"
+              srcset="
+                ./images/hero/dish-01@1x-tb.png  292w,
+                ./images/hero/dish-01@2x-tb.png  584w,
+                ./images/hero/dish-01@1x-dk.png  528w,
+                ./images/hero/dish-01@2x-dk.png 1056w
+              "
+              sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px"
+              src="./images/hero/dish-01@1x-tb.png"
+              alt="dish_photo"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="slider-img"
+              srcset="
+                ./images/hero/dish-02@1x-tb.png  292w,
+                ./images/hero/dish-02@2x-tb.png  584w,
+                ./images/hero/dish-02@1x-dk.png  528w,
+                ./images/hero/dish-02@2x-dk.png 1056w
+              "
+              sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px"
+              src="./images/hero/dish-02@1x-tb.png"
+              alt="dish_photo"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="slider-img"
+              srcset="
+                ./images/hero/dish-03@1x-tb.png  292w,
+                ./images/hero/dish-03@2x-tb.png  584w,
+                ./images/hero/dish-03@1x-dk.png  528w,
+                ./images/hero/dish-03@2x-dk.png 1056w
+              "
+              sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px"
+              src="./images/hero/dish-03@1x-tb.png"
+              alt="dish_photo"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
