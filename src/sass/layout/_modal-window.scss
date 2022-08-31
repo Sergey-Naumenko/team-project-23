@@ -46,6 +46,9 @@
   right: 16px;
   top: 16px;
 
+  font-weight: 500;
+  font-size: 13px;
+
   cursor: pointer;
 
   width: 24px;
@@ -129,7 +132,7 @@
   font-family: inherit;
 
   color: var(--main-txt-cl);
-  background: #ffffff;
+  background-color: #ffffff;
 
   border: 2px solid var(--dark-green-cl);
   border-radius: 30px;
@@ -138,6 +141,12 @@
 
   margin-left: 0 auto;
   padding: 10px 38px;
+  transition: background-color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #bbf330;
+  }
 }
 
 .modal-form-notfication {
@@ -195,10 +204,10 @@
   transform: translate(-50%, 20px) scale(1);
 }
 
-.modal-input:required:not(:placeholder-shown):invalid {
-  border-color: rgba(255, 112, 93, 1);
-}
+// .modal-input:required:not(:placeholder-shown):invalid {
+//   border-color: rgba(255, 112, 93, 1);
+// }
 
-.modal-input:not(:required) ~ .modal-form-icon {
-  opacity: 1;
-}
+// .modal-input:not(:required) ~ .modal-form-icon {
+//   opacity: 1;
+// }
