@@ -116,7 +116,7 @@
     border-radius: 30px;
     cursor: pointer;
     border: none;
-    transform: background-color var(--timing-function);
+    transition: background-color var(--timing-function);
 }
 
 .herro__btn-text {
@@ -137,13 +137,6 @@
 
     background-color: var(--green-hover-cl);
 }
-
-.herro__btn-text:hover,
-.herro__btn-text:focus,
-.herro__btn-text:active {
-    color: var(--main-txt-cl);
-}
-
 
 
 .slider {
