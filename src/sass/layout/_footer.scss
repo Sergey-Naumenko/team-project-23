@@ -203,12 +203,14 @@
 // !! модификатор кнопки подписки
 .footer__subscribe-btn {
   margin-bottom: 20px;
+
   background-color: #ffffff;
   border: 0.85px solid var(--dark-green-cl);
 
   transition: background-color var(--timing-function);
 
   @media screen and (min-width: 768px) {
+    margin-left: 13px;
     margin-bottom: 12px;
   }
 }
